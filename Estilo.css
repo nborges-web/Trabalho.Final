@@ -1,0 +1,267 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color: black;
+    line-height: 1.6;
+    background-image: url(Imagens/construction-site.png);
+}
+
+/* Cabeçalho */
+header {
+    background-color: white;
+    color: black;
+    padding: 20px 10%;
+    display: flex;
+    justify-content:space-around;
+    border-radius: 10vh;
+    border: solid 4px;
+    border-color: yellow;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    width: 10vh;
+    
+}
+.btnC {
+    width: 10%;
+    background-color: transparent;
+    border: none;
+}
+.btnC:hover {
+    cursor: pointer;
+}
+
+nav ul {
+    gap: 25px;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.menu-principal li{
+    color: black;
+
+}
+.menu-principal li :hover{
+    text-decoration: none;
+    color: orange;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+}
+
+
+/* Banner */
+.home {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("banner-pastel.jpg") center/cover;
+    color: white;
+    text-align: center;
+    margin-top: 10vh;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: yellow;
+    color: black;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+.btn2{
+    display:inline-block;
+    background: yellow;
+    color: black;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold; 
+    transition: 0.3s;
+
+
+}
+
+.btn:hover {
+    background: crimson;
+    color: white;
+}
+
+/* Seção Cardápio */
+.menu {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.menu h2 {
+    color: crimson;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    border: 2px solid yellow;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    margin: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: crimson;
+}
+
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h3 {
+    color: crimson;
+    margin-bottom: 10px;
+}
+
+.valor {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Sobre */
+.sobreNos {
+    background: #fff9d6;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.sobreNos h2 {
+    color: crimson;
+    margin-bottom: 20px;
+}
+.sobre-conteiner {
+  display: flex;
+}
+.txt-sobre{
+    padding: 15x;
+    margin-top: 10vh;
+    font-style: italic;
+    font-size: 150%;
+}
+.maps{
+  border-radius: 10%;
+  border-color: aqua;
+}
+
+/* Contato */
+.contact {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: white;
+    margin-top: 10vh; 
+}
+.im
+.contact h2 {
+    color: crimson;
+    margin-bottom: 25px;
+}
+.contato{
+    border: solid yellow;
+    background-color: white
+}
+.contact form {
+    max-width: 600px;
+    margin: auto;
+}
+.logos {
+    width: 10%;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid yellow;
+    border-radius: 8px;
+    outline: none;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: crimson;
+}
+
+/* Rodapé */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer span {
+    color: yellow;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
