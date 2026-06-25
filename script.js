@@ -1,21 +1,21 @@
-// // const valorPastel =  document.querySelectorAll('.card');
-// // valorPastel.forEach(card => {
-// //     card.addEventListener('click', () => {
+const valorPastel =  document.querySelectorAll('.card');
+valorPastel.forEach(card => {
+    card.addEventListener('click', () => {
 
-// //         const nomePastel = card.getAttribute('data-nome');
-// //         const precoPastel = card.getAttribute('data-preco');
+         const nomePastel = card.getAttribute('data-nome');
+        const precoPastel = card.getAttribute('data-preco');
 
      
-// //         console.log(`Pastel selecionado: ${nomePastel} - Preço: R$ ${precoPastel}`);
+        console.log(`Pastel selecionado: ${nomePastel} - Preço: R$ ${precoPastel}`);
 
        
-// //        Pedido(nomePastel, precoPastel);
-// //     });
-// // });
+        Pedido(nomePastel, precoPastel);
+     });
+ });
 
-// // function Pedido(nome, preco) {
-// //     alert(`Você adicionou 1 ${nome} por R$ ${preco} ao seu pedido!`);
-// // }
+ function Pedido(nome, preco) {
+     alert(`Você adicionou 1 ${nome} por R$ ${preco} ao seu pedido!`);
+ }
 
 
 //Daqui pra baixo foram tentativas do Nicolas 
